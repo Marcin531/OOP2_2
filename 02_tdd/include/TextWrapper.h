@@ -13,5 +13,6 @@ public:
     TextWrapper();
     TextWrapper(int columns);
     int getNumberOfColumns();
+    std::string wrapText(std::string textToWrap);
 };
 #endif //INC_02_TDD_TEXTWRAPPER_H

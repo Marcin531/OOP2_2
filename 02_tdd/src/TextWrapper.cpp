@@ -14,3 +14,6 @@ TextWrapper::TextWrapper(int columns) {
 int TextWrapper::getNumberOfColumns() {
     return columns;
 }
+std::string TextWrapper::wrapText(std::string textToWrap) {
+    return textToWrap;
+}
