@@ -16,4 +16,8 @@ TEST(TextWrapper, HasColumnsGetter) { // czy wrapper posiada metode umozliwiajac
     EXPECT_EQ(10,wrapper.getNumberOfColumns());
 }
 
+TEST(TextWrapper, CanWrapTextWithOneColumn){
+    auto wrapper=TextWrapper(1);
+    EXPECT_EQ("a",wrapper.wrapText("a"));
+}
 
