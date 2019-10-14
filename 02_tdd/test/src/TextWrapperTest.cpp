@@ -21,3 +21,8 @@ TEST(TextWrapper, CanWrapTextWithOneColumn){
     EXPECT_EQ("a",wrapper.wrapText("a"));
 }
 
+TEST(TextWrapper, CanWrapLongerTextWithOneColumn){
+    auto wrapper= TextWrapper();
+    EXPECT_EQ("a\nb",wrapper.wrapText("ab"));
+}
+
