@@ -2,7 +2,7 @@
 
 Group: 2
 
-- 01\_cmake - HOMEWORK
+- 01\_cmake - HOMEWORK (1.2)
 
 
 This project contains **googletest** submodule added using following command:
