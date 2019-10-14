@@ -6,6 +6,11 @@
 //
 class TextWrapper{
 
+public:
+    int columns() const{
+        return 10;
+    }
+
 };
 
 TEST(TextWrapper, CreateInstance) { // pierwsze pole to nazwa klasy, ktora testuje, a drugie to co chce prztestowac
@@ -14,5 +19,6 @@ TEST(TextWrapper, CreateInstance) { // pierwsze pole to nazwa klasy, ktora testu
 
 TEST(TextWrapper, HasColumnsGetter) { // czy wrapper posiada metode umozliwiajaca wyciagniecie ilosci kolumn
     auto wrapper=TextWrapper();
-EXPECT_EQ(10,wrapper.columns());
+    EXPECT_EQ(10,wrapper.columns());
 }
+
