@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(02_tdd)
 
-set(HEADERS include/Dummy.h) #lista nagłówków - pliki .h nalezy tutaj dodawac
-set(SOURCES src/Dummy.cpp) #pliki źródłowe do biblioteki
+set(HEADERS include/Dummy.h include/TextWrapper.h) #lista nagłówków - pliki .h nalezy tutaj dodawac
+set(SOURCES src/Dummy.cpp src/TextWrapper.cpp) #pliki źródłowe do biblioteki
 
 #definicja biblioteki
 add_library(02_tdd_lib ${HEADERS} ${SOURCES}) # oznacza, że biblioteka zależy od tych dwóch zmiennych 0 naglowkow i zrodel
