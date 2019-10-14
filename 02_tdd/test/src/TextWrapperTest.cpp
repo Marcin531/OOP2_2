@@ -26,3 +26,9 @@ TEST(TextWrapper, CanWrapLongerTextWithOneColumn){
     EXPECT_EQ("a\nb",wrapper.wrapText("ab"));
 }
 
+/*TEST(TextWrapper,CanWrapLongerTextWithSpacesWithOneColumn){
+    auto wrapper= TextWrapper();
+    EXPECT_EQ("a\nb\nc",wrapper.wrapText("ab c"));
+}*/
+
+

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <TextWrapper.h>
 #include "Dummy.h"
 
 //Zadanie
@@ -7,7 +8,7 @@
 //jak skompilowac plik -> plik readme.md
 int main(int argc, char* argv[])
 {
-    auto dummy = Dummy{};
-    std::cout << dummy.hello() << std::endl;
+    auto wrapper = TextWrapper(1);
+    std::cout<<wrapper.wrapText("ab");
     return 0;
 }

@@ -20,9 +20,10 @@ std::string TextWrapper::wrapText(std::string textToWrap) {
     while (textToWrap[i+1]){
         temp=textToWrap.substr(i+this->columns);
         textToWrap=textToWrap.substr(0,i+this->columns);
-        textToWrap[i+this->columns]='\n';
-        textToWrap=textToWrap.append(temp);
-        std::cout<<textToWrap;
+        textToWrap=textToWrap+'\n';
+        textToWrap=textToWrap+temp;
+        i+=2;
 
     }
+    return textToWrap;
 }

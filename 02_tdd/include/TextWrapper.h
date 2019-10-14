@@ -8,7 +8,7 @@
 #include <iostream>
 
 class TextWrapper{
-    int columns=0;
+    int columns=1;
 public:
     TextWrapper();
     TextWrapper(int columns);
