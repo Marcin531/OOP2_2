@@ -4,6 +4,10 @@
 
 //napierw test, ktory nie dziala nalezy dodac, zapisac sobie zmiany, dodawac commity.
 //
+class TextWrapper{
+
+};
+
 TEST(TextWrapper, CreateInstance) { // pierwsze pole to nazwa klasy, ktora testuje, a drugie to co chce prztestowac
-    auto wrapper = Wrapper{};
+    auto wrapper = TextWrapper{};
 }
